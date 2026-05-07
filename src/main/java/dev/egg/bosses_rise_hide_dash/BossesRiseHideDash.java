@@ -11,9 +11,9 @@ import org.slf4j.Logger;
 public class BossesRiseHideDash {
     public static final String MODID = "bosses_rise_hide_dash";
     private static final Logger LOGGER = LogUtils.getLogger();
-    protected static int decayTimer = 0;
-    private static final int decaySeconds = 3;
-    protected static int lastRollCount = 1;
+    private static final int decaySeconds = 3; // delay before it disappears (I might put this in a config eventually)
+    protected static int decayTimer = decaySeconds;
+    protected static int lastRollCount = 2; //initial value doesn't really matter, it's fetched when the player logs in
 
     public BossesRiseHideDash(IEventBus modEventBus, ModContainer modContainer) {
         NeoForge.EVENT_BUS.register(EventHandler.class);
