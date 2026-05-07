@@ -1,0 +1,1 @@
+A small addon for the Bosses' Rise mod that automatically hides the roll gui element. The element shows for 3 seconds (or until nearby hostile enemies are killed). It shows up when the player: attacks a monster, is attacked by a monster, dodge rolls, or changes their max roll count in any way (equiping armor)
